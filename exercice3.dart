@@ -10,5 +10,11 @@ class Compte {
   if (montant > 0) {
     _solde += montant;
   }
+  }
 }
+
+void main() {
+  var compte = Compte('001');
+  compte.depot(150);
+  print(compte.solde);
 }
