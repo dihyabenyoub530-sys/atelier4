@@ -32,4 +32,17 @@ class Film extends Media {
   }
 }
 
+void main() {
+  List<Media> catalogue = [
+    Livre('Nedjma', 'Kateb Yacine'),
+    Film('Papicha', 106),
+    Film('Wadjda', 98),
+    Film('La Bataille d Alger', 121),
+  ];
+
+  for (var media in catalogue) {
+    media.afficherType();
+  }
+}
+
 
